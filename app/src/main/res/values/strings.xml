@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AltB MusicApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Artist">Artists</string>
+    <string name="AskPermission">ALTB want to access your external storage</string>
+    <string name="DrawerOpen">Open</string>
+    <string name="Play">Play</string>
+    <string name="DrawerClose">Close</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+</resources>

@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.altb.musicapp.Fragments.MyLibrary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:id="@+id/header"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+            <include layout="@layout/content_listview"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D33737"
+            android:id="@+id/divider"
+            android:layout_below="@+id/header"
+            ></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/divider"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recently Played"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:textSize="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView"
+                android:layout_marginTop="5dp"
+                android:textColor="#0e0d0d" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recentPlayedList"
+                android:layout_below="@+id/textView"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"></ListView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

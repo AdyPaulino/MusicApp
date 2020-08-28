@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#505050">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Settings"
+            android:id="@+id/textView5"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="43dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/EditTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist:"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/EditArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Album:"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/EditAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genre:"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/EditGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ED2853"
+            android:layout_marginTop="5dp"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/min"
+
+                android:text="Min"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:src="@drawable/mute"
+                android:layout_marginLeft="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                />
+
+            <app.minimize.com.seek_bar_compat.SeekBarCompat
+                android:id="@+id/volumeSeekbar"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="400sp"
+                app:progressColor="#4BBEE4"
+                app:thumbAlpha="1.0"
+                app:thumbColor="#4BBEE4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/min"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/max"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:text="Max"
+                android:src="@drawable/speaker1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#BFBFBF"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/volumeSeekbar" />
+        </RelativeLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/sleepText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop playing after..."
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/never"
+                android:layout_width="323dp"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="Never"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <!--android:layout_marginBottom="20dp"-->
+            <RadioButton
+                android:id="@+id/mix"
+                android:layout_width="323dp"
+                android:layout_height="match_parent"
+                android:text="End of mix"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <RadioButton
+                android:id="@+id/min30"
+                android:layout_width="323dp"
+                android:layout_height="match_parent"
+                android:text="30 min"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <RadioButton
+                android:id="@+id/min60"
+                android:layout_width="323dp"
+                android:layout_height="match_parent"
+                android:text="60 min"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

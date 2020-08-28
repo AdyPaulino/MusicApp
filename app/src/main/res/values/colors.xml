@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#505050</color>
+    <color name="colorPrimaryDark">#424141</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="home_background">#f0f0f0</color>
+    <color name="artist_text">#777777</color>
+    <color name="album_text">#c6c3c3</color>
+    <color name="title_colour">#434242</color>
+
+    <color name="seekbar"> #4BBEE4</color>
+    <color name="light_red">#D33737</color>
+
+
+
+</resources>
